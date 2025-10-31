@@ -25,6 +25,11 @@ header {
   background: linear-gradient(90deg, rgb(0, 0, 0), rgb(17, 202, 79));
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+/*article do main do index*/
+article img{
+  min-width: 100%;
+}
+
 
 h1 {
   font-size: 2.2rem;
@@ -71,6 +76,30 @@ nav a.ativo {
 }
 
 nav a.ativo::after {
+  width: 100%;
+}
+
+.album{
+  color: blue;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.album::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: rgb(22, 207, 32);
+  transition: width 0.3s ease-in-out;
+}
+
+.album:hover{
+    color: rgb(1, 202, 11);
+}
+.album:hover::after{
   width: 100%;
 }
 
