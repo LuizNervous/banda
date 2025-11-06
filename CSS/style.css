@@ -25,8 +25,9 @@ header {
   background: linear-gradient(90deg, rgb(0, 0, 0), rgb(17, 202, 79));
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 /*article do main do index*/
-article img{
+article img {
   min-width: 100%;
 }
 
@@ -82,11 +83,31 @@ nav a.ativo::after {
 
 main {
   flex: 1;
- min-width: max-content;
+  min-width: max-content;
+   background-image: url('imagens/img5.png');
+  
 }
-main img{
+
+main img {
   min-width: 100%;
-   filter: brightness(70%) contrast(110%);
+  filter: brightness(55%) contrast(110%);
+
+}
+
+.fundo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video {
+  position: absolute;
+  top: 60%;
+  right: 01px;
+  width: 20%;
+  height: 20%;
+  opacity: 0.8;
+  /* deixa o fundo um pouco visível */
 }
 
 footer {

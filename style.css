@@ -80,7 +80,7 @@ nav a.ativo::after {
 }
 
 .album{
-  color: blue;
+  color: rgb(10, 10, 10);
   text-decoration: none;
   position: relative;
   transition: all 0.3s ease;
@@ -320,6 +320,20 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.videos iframe,
+.videos video {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
 
 /* ===== Responsividade ===== */
 @media (max-width: 768px) {
