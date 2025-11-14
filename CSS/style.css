@@ -26,21 +26,18 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/*article do main do index*/
-article img {
-  min-width: 100%;
+@font-face {
+  font-family: fontmassa;
+  src: url("A");
 }
-
 
 h1 {
-  font-size: 2.2rem;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 6px rgba(0, 255, 100, 0.6);
-  font-weight: bold;
+  font-family: "fontmassa";
+  color: #67ff67;
+  letter-spacing: 5px;
 }
 
-/* ===== Navegação ===== */
+
 nav a {
   color: white;
   text-decoration: none;
@@ -51,33 +48,9 @@ nav a {
   transition: color 0.3s ease;
 }
 
-/* Efeito da barrinha */
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: -3px;
-  background-color: rgb(118, 255, 125);
-  transition: width 0.3s ease-in-out;
-}
 
 nav a:hover {
   color: rgb(118, 255, 125);
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* Página ativa */
-nav a.ativo {
-  color: rgb(118, 255, 125);
-}
-
-nav a.ativo::after {
-  width: 100%;
 }
 
 
@@ -85,7 +58,6 @@ main {
   flex: 1;
   min-width: max-content;
    background-image: url('imagens/img5.png');
-  
 }
 
 main img {
@@ -98,16 +70,6 @@ main img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.video {
-  position: absolute;
-  top: 60%;
-  right: 01px;
-  width: 20%;
-  height: 20%;
-  opacity: 0.8;
-  /* deixa o fundo um pouco visível */
 }
 
 footer {
