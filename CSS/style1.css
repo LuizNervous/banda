@@ -25,8 +25,9 @@ header {
   background: linear-gradient(90deg, rgb(0, 0, 0), rgb(17, 202, 79));
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 /*article do main do index*/
-article img{
+article img {
   min-width: 100%;
 }
 
@@ -40,6 +41,29 @@ h1 {
   font-family: "fontmassa";
   color: #67ff67;
   letter-spacing: 5px;
+}
+
+button{
+  background-color: #111;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  transition: all 0.3s;
+}
+button:hover{
+  background-color: #333;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  color: rgb(252, 252, 252);
+  background-color: #333;
+  transition: background 0.3s;
+}
+
+body.dark-mode section {
+  color: rgb(252, 252, 252);
+  background-color: #1d1d1d;
 }
 
 /* ===== Navegação ===== */
@@ -62,8 +86,8 @@ nav a:hover {
 
 main {
   flex: 1;
- margin: 10px;
- display: flex;
+  margin: 10px;
+  display: flex;
 
 }
 
@@ -92,7 +116,7 @@ section {
 
 .membros article:hover {
   transform: scale(1.08);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .membros img {
@@ -102,6 +126,7 @@ section {
   border-radius: 50%;
   border: 3px solid rgb(17, 202, 79);
 }
+
 .dolado {
   display: flex;
   align-items: center;
@@ -138,12 +163,13 @@ footer a:hover {
 }
 
 
-.album{
+.album {
   color: rgb(248, 248, 248);
   text-decoration: none;
   position: relative;
   transition: all 0.3s ease;
 }
+
 section a::after {
   content: "";
   position: absolute;
@@ -155,9 +181,10 @@ section a::after {
   transition: width 0.3s ease-in-out;
 }
 
-section a:hover{
-    color: rgb(1, 202, 11);
+section a:hover {
+  color: rgb(1, 202, 11);
 }
-section a:hover::after{
+
+section a:hover::after {
   width: 100%;
 }
