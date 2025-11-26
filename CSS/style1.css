@@ -65,6 +65,15 @@ body.dark-mode section {
   color: rgb(252, 252, 252);
   background-color: #1d1d1d;
 }
+body.dark-mode header {
+  background: #1d1d1d;
+}  
+body.dark-mode #botao{
+  background-color: #46e646;
+}
+body.dark-mode #botao:hover{
+  background-color: #49c949;
+}
 
 /* ===== Navegação ===== */
 nav a {
