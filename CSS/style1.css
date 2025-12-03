@@ -1,4 +1,4 @@
-/* ===== Reset e base ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,6 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/*article do main do index*/
 article img {
   min-width: 100%;
 }
